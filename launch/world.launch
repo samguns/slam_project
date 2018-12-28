@@ -27,7 +27,7 @@
   <node pkg="nodelet" type="nodelet" name="cmd_vel_mux"
         args="load yocs_cmd_vel_mux/CmdVelMuxNodelet mobile_base_nodelet_manager">
     <param name="yaml_cfg_file" value="$(find slam_project)/param/mux.yaml"/>
-    <remap from="cmd_vel_mux/output" to="turtlebot_node/cmd_vel"/>
+    <remap from="cmd_vel_mux/output" to="udacity_bot/commands/velocity"/>
   </node>
 
 </launch>
